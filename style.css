@@ -1,0 +1,844 @@
+<<<<<<< HEAD
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500;6..12,800&family=Poppins:wght@300;400;500&family=Roboto+Condensed:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: url(bg-1.jpg);
+    background-size: cover;    
+    background-attachment: fixed;
+}
+.landing{
+    width: 100%;
+    height: 100vh;
+}   
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+}
+.logo a{
+    color: powderblue;   
+    margin-left: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+.menu {
+    height: 40px;
+    width: 35%;
+    margin-right: 20px;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+ul a{
+    text-decoration: none;
+}
+ul li{
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.5rem;
+    color: #fff;
+}
+ul li:hover{
+    border-bottom: 3px solid white;
+}
+
+/* ----------------main section--- */
+#title{
+    color: white;
+    font-size: 5rem;
+    margin-left: 40px;
+    margin-top: 200px;
+}
+#desig{
+    color: lightcoral;
+    font-size: 3rem;
+    margin-left: 40px;
+    margin-top: -20px;
+}
+.summary{
+    width: 60%;
+    margin-left: 40px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    word-spacing: 2px;
+}
+#resume{
+    margin-left: 40px;
+    background-color: powderblue;
+    padding: 12px 40px;
+    border-radius: 12px;
+    color: black;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-decoration: none;
+}
+#resume:hover{
+    background-color: lightcoral
+}
+.link-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all ease-in 0.3s;
+}
+.icon:hover{
+    background-color: white;
+    transition: all ease-in 0.3s;
+}
+.icon i{
+    font-size: 2.4rem;
+    color: white;
+    transition: all ease-in 0.3s;
+} 
+.icon i:hover{
+    color: black;
+    transition: all ease-in 0.3s;  
+}
+/* -------------------About section------------ */
+.about{
+    width: 100%;
+    height: 130vh;
+    margin-top: 40px;
+}
+.abt-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+.image{
+    width: 300px;
+    height: 370px;
+    margin-top: 60px;
+    background-image: url(PP.jpeg);
+    background-size: cover;
+    border-radius: 24px;
+}
+.container{
+    width: 60%;
+    height: 50%;
+    margin-left: 80px;
+}
+#about{
+    color: orange;
+    text-decoration: underline;
+    font-size: 2rem;
+}
+.container #name{
+    margin-top: 10px;
+}
+.container p{
+    color: violet;
+    font-size: 1.2rem;
+}
+.container h2{
+    margin-top: 10px;
+    font-size: 2rem;
+    color: orange;
+    text-decoration-line: underline;
+}
+.container h3{
+    font-size: 2rem;    
+    color: white;
+}
+.container h4{
+    font-size: 1.3rem;
+    color: lightcoral;
+}
+.container h5{
+    font-size: 1rem;   
+    color: grey; 
+}
+.skills-container{
+    margin-top: 40px;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skills-container h2{
+    color: white;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+.skill-logos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 100px;
+    margin-top: 40px;
+}
+.skill-logos img{
+    height: 100px;
+}
+.skill-title{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 90%;
+    height: 50px;
+}
+.skill-title li{
+    list-style: none;
+    font-size: 1.4rem;
+    color: white;
+    font-weight: 800;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+/* -------PROJECT SECTION---------- */
+.project-section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project-section h3{
+    color: #fff  ;
+    font-size: 3rem;
+    text-decoration: underline;
+
+}
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    width: 100%;
+    height: 300px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    width: 250px;
+    height: 370px;
+    border-radius: 24px;
+    box-shadow:  5px 5px 5px black, -1px -2px 5px black;
+    transition: all 0.3s;
+}
+.card:hover{
+    scale: 1.05;
+    transition: all 0.3s;
+}
+.proj-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 330px;
+    border-radius: 24px;
+    overflow: hidden;
+}
+.proj-image img{
+    width: 220px;
+    height: 300px;
+}
+.card h4{
+    color: #fff;
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+.card a{
+    color: lightcoral;
+}
+/* ----------Contact Section--------------- */
+.contact{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column  ;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+.contact-container{
+    width: 60%;
+    height: 300px;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Nunito Sans', sans-serif;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    opacity: 0.2;
+}
+.copyright{
+    font-size: 1.2rem;
+    color: black;
+}
+=======
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500;6..12,800&family=Poppins:wght@300;400;500&family=Roboto+Condensed:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: url(bg-1.jpg);
+    background-size: cover;    
+    background-attachment: fixed;
+}
+.landing{
+    width: 100%;
+    height: 100vh;
+}   
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    /* background-color: #7eb6f7; */
+}
+.logo a{
+    color: powderblue;   
+    margin-left: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+.menu {
+    height: 40px;
+    width: 35%;
+    margin-right: 20px;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+ul a{
+    text-decoration: none;
+}
+ul li{
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.5rem;
+    color: #fff;
+}
+ul li:hover{
+    border-bottom: 2px solid white;
+}
+
+/* ----------------main section--- */
+#title{
+    color: white;
+    font-size: 5rem;
+    margin-left: 40px;
+    margin-top: 140px;
+}
+#desig{
+    color: lightcoral;
+    font-size: 3rem;
+    margin-left: 40px;
+    margin-top: -20px;
+}
+.summary{
+    width: 60%;
+    margin-left: 40px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    word-spacing: 2px;
+}
+#resume{
+    margin-left: 40px;
+    background-color: powderblue;
+    padding: 12px 40px;
+    border-radius: 12px;
+    color: black;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-decoration: none;
+}
+#resume:hover{
+    background-color: lightcoral
+}
+.link-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: red; */
+    width: 300px;
+    height: 50px;
+    margin-left: 40px;
+    margin-top: 40px;
+    /* margin-top: 0px; */
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all ease-in 0.3s;
+}
+.icon:hover{
+    /* background-color: lightcoral; */
+    background-color: white;
+    transition: all ease-in 0.3s;
+}
+.icon i{
+    font-size: 2.4rem;
+    color: white;
+    transition: all ease-in 0.3s;
+} 
+.icon i:hover{
+    color: black;
+    transition: all ease-in 0.3s;  
+}
+/* -------------------About section------------ */
+.about{
+    width: 100%;
+    height: 130vh;
+    margin-top: 40px;
+}
+.abt-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+.image{
+    width: 300px;
+    height: 370px;
+    margin-top: 60px;
+    /* background-color: grey; */
+    background-image: url(PP.jpeg);
+    background-size: cover;
+    border-radius: 24px;
+}
+.container{
+    width: 60%;
+    height: 50%;
+    /* background-color: #fff; */
+    margin-left: 80px;
+}
+#about{
+    color: orange;
+    text-decoration: underline;
+    font-size: 2rem;
+}
+.container #name{
+    margin-top: 10px;
+}
+.container p{
+    color: violet;
+    font-size: 1.2rem;
+}
+.container h2{
+    margin-top: 10px;
+    font-size: 2rem;
+    color: orange;
+    text-decoration-line: underline;
+}
+.container h3{
+    font-size: 2rem;    
+    color: white;
+}
+.container h4{
+    font-size: 1.3rem;
+    color: lightcoral;
+}
+.container h5{
+    font-size: 1rem;   
+    color: grey; 
+}
+.skills-container{
+    margin-top: 40px;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #fff; */
+}
+.skills-container h2{
+    color: white;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+.skill-logos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 100px;
+    margin-top: 40px;
+    /* background-color: pink; */
+}
+.skill-logos img{
+    /* width: 100%; */
+    height: 100px;
+    /* border: 2px solid red; */
+    
+}
+.skill-title{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 90%;
+    height: 50px;
+    /* background-color: yellow; */
+}
+.skill-title li{
+    list-style: none;
+    font-size: 1.4rem;
+    color: white;
+    font-weight: 800;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+/* -------PROJECT SECTION---------- */
+.project-section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project-section h3{
+    color: #fff  ;
+    font-size: 3rem;
+    text-decoration: underline;
+
+}
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    width: 100%;
+    height: 300px;
+    /* background-color: #fff; */
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    width: 250px;
+    height: 370px;
+    border-radius: 24px;
+    box-shadow:  5px 5px 5px black, -1px -2px 5px black;
+    transition: all 0.3s;
+}
+.card:hover{
+    scale: 1.05;
+    transition: all 0.3s;
+}
+.proj-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 330px;
+    border-radius: 24px;
+    /* background-color: green; */
+    overflow: hidden;
+
+}
+.proj-image img{
+    width: 220px;
+    height: 300px;
+}
+.card h4{
+    color: #fff;
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+.card a{
+    /* color: #7C89A2; */
+    color: lightcoral;
+}
+/* ----------Contact Section--------------- */
+.contact{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column  ;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    /* font-size: 2rem; */
+}
+.contact-container{
+    width: 60%;
+    height: 300px;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Nunito Sans', sans-serif;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    opacity: 0.2;
+}
+.copyright{
+    font-size: 1.2rem;
+    color: black;
+    /* color: red; */
+}
+
+/* --------------Using Media Queries for Responsiveness----------------  */
+
+@media(max-width:320px){
+
+    .navbar{
+        height: 30px;
+        margin-top: 10px;
+    }
+    .logo a{
+        color: white;   
+        margin-left: 0px;
+        font-size: 1.5rem;
+    }
+    ul li{
+        display: none;
+    }
+    #title{
+        /* color: red; */
+        font-size: 3rem;
+        margin-top: 160px;
+        margin-left: 10px;
+    }
+    #desig{
+        font-size: 1.7rem;
+        margin-left: 10px;
+    }
+    .summary{
+        width: 80%;
+        margin-left: 10px;
+        margin-top: 10px;
+        font-size: 0.8rem;
+        color: #fff;
+        word-spacing: 2px;
+    }
+    #resume{
+        margin:10px 10px;
+        padding: 4px 10px;
+        font-size: 1rem;
+        border-radius: 5px;
+    }
+    .link-container{
+        /* background-color: red; */
+        width: 200px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .icon{
+        width: 30px;
+        height: 30px;
+    }
+    .icon i{
+        font-size: 1.4rem;
+        padding: 4px 4px;
+    } 
+    /* -------about  -section----- */
+    .about{
+        /* width: 100%; */
+        /* height: 100vh; */
+        margin-top: 0px;
+    }
+    .abt-container{
+        flex-direction: column;
+    }
+    .image{
+        width: 150px;
+        height: 200px;
+        margin-top: 20px;
+    }
+    .container{
+        width: 90%;
+        /* height: 50%; */
+        /* background-color: #fff; */
+        margin-left: 0px;
+        margin-top: 10px;;
+    }
+    #about{
+        font-size: 1.2rem;
+    }
+    .container #name{
+        font-size: 1.6rem;
+    }
+    .container p{
+        font-size: 0.8rem;
+    }
+    .container h2{
+        font-size: 1.2rem;
+        margin-top: 20px;
+    }
+    .container h3{
+        font-size: 1rem;    
+    }
+    .container h4{
+        font-size: 0.7rem;
+    }
+    .container h5{
+        font-size: 0.5rem;   
+    }
+    /* -----------skills -section------- */
+    .skills-container{
+        margin-top: 40px;
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background-color: #fff; */
+    }
+    .skills-container h2{
+        color: white;
+        font-size: 1.2rem;
+        text-decoration: underline;
+    }
+    .skill-logos{
+        display: none;
+    }
+    .skill-title{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        width: 90%;
+        height: 50px;
+        /* background-color: yellow; */
+    }
+    .skill-title li{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        list-style-type: disc;
+        font-size: 0.8rem;
+        font-weight: normal;
+    }
+
+    /* -------PROJECT SECTION---------- */
+
+    .project-section{
+        height: 230vh;
+    }
+    .project-section h3{
+        font-size: 1.2rem;
+        margin-top: 100px;
+    }
+    .card-container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 0px;
+        width: 80%;
+        height: 280px;
+    }
+    .card{
+        scale: 0.9;
+    }
+    .card:hover{
+        scale: 1;
+    }
+    .card h4{
+        font-size: 1.5rem;
+    }
+    .card a{
+        margin-top: 5px;
+    }
+/* ----------Contact Section--------------- */
+    .contact{
+        height: 40vh;
+    }
+    .contact-container{
+        width: 80%;
+        font-size: 1rem;
+    }
+    footer{
+        height: 30px;
+    }
+    .copyright{
+        font-size: 0.8rem;
+    }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> b54c794 (base design of Portfolio)
